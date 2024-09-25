@@ -24,7 +24,7 @@
         <!-- Donation Section -->
         <div class="navbar bg-[#F9F7F3]">
             <div class="navbar-start">
-                <a id="btn-blog" class="btn  bg-[#B4F461] rounded-xl font-semibold text-[20px]">Blog</a>
+                <a id="btn-blog" class="btn  bg-[#B4F461] rounded-xl font-semibold text-[20px] " href="blog.html">Blog</a>
                 <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
             </div>
             <div class="navbar-center hidden lg:flex md:flex">
@@ -33,25 +33,26 @@
             </div>
             <div class="navbar-end lg:flex px-1">
                 <img src="assets/coin.png" alt="">
-                <p class="px-1 font-medium text-[20px]">5500</p>
+                <p id="current-balance" class="px-1 font-medium text-[20px]">5500</p>
                 <p class="font-medium text-[20px]">BDT</p>
             </div>
         </div>
 
         <!-- Button section -->
         <div class="flex justify-center space-x-2 mt-16 mb-8">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:font-medium lg:text-[20px]">Donation</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:font-medium lg:text-[20px]">History</button>
+            <button id="show-donation-page" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:font-medium lg:text-[20px]">Donation</button>
+            <button id="show-history-page" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:font-medium lg:text-[20px]">History</button>
         </div>
         <!-- card section -->
-        <!-- card-1 -->
-        <div class="hero w-5/6 mx-auto border-[1px] rounded-xl py-4 container mb-8">
+       <div id="donation-page" >
+         <!-- card-1 -->
+         <div class="hero w-5/6 mx-auto border-[1px] rounded-xl py-4 container mb-8">
             <div class="hero-content flex-col lg:flex-row ">
                 <img class="w-full" src="assets/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
                 <div class="ml-4">
                     <div class=" flex bg-[#1111110D] rounded-lg p-3 w-2/5 my-4">
                         <img src="assets/coin.png" alt="">
-                        <p class="px-1 font-medium text-[20px]">5500</p>
+                        <p id="noakhali-balance" class="px-1 font-medium text-[20px]">500</p>
                         <p class="font-medium text-[20px]">BDT</p>
                     </div>
                     <h1 class="text-xl tetx-[#111111] font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -61,9 +62,9 @@
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
                         and making a positive impact on the lives of those in need.
                     </p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full my-4" />
+                    <input id="donation-amount-noakhali" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full my-4" />
 
-                    <button class="btn btn-wide bg-[#B4F461]  w-full">Donate Now</button>
+                    <button id="btn-donation-noakhali" class="btn btn-wide bg-[#B4F461]  w-full">Donate Now</button>
                 </div>
             </div>
         </div>
@@ -74,7 +75,7 @@
                 <div class="ml-4">
                     <div class=" flex bg-[#1111110D] rounded-lg p-3 w-2/5 my-4">
                         <img src="assets/coin.png" alt="">
-                        <p class="px-1 font-medium text-[20px]">5500</p>
+                        <p id="feni-balance" class="px-1 font-medium text-[20px]">1500</p>
                         <p class="font-medium text-[20px]">BDT</p>
                     </div>
                     <h1 class="text-xl tetx-[#111111] font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -85,9 +86,9 @@
                         help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a
                         real difference. Please consider donating today to assist those in urgent need.
                     </p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full my-4" />
+                    <input id="donate-amount-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full my-4" />
 
-                    <button class="btn btn-wide bg-[#B4F461]  w-full">Donate Now</button>
+                    <button id="btn-donate-feni" class="btn btn-wide bg-[#B4F461]  w-full">Donate Now</button>
                 </div>
             </div>
         </div>
@@ -98,7 +99,7 @@
                 <div class="ml-4">
                     <div class=" flex bg-[#1111110D] rounded-lg p-3 w-2/5 my-4">
                         <img src="assets/coin.png" alt="">
-                        <p class="px-1 font-medium text-[20px]">5500</p>
+                        <p id="quota-movement-balance" class="px-1 font-medium text-[20px]">500</p>
                         <p class="font-medium text-[20px]">BDT</p>
                     </div>
                     <h1 class="text-xl tetx-[#111111] font-bold">Aid for Injured in the Quota Movement</h1>
@@ -110,17 +111,24 @@
                         vital role in alleviating their suffering and aiding in their recovery. Please consider making a
                         donation to support these brave individuals in their time of need.
                     </p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full my-4" />
+                    <input id="donate-amount-quota-movement" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full my-4" />
 
-                    <button class="btn btn-wide bg-[#B4F461]  w-full">Donate Now</button>
+                    <button id="btn-donate-quota-movement" class="btn btn-wide bg-[#B4F461]  w-full">Donate Now</button>
                 </div>
             </div>
         </div>
+       </div>
 
 
 
         <!-- History Section -->
-        <!-- Blog Section -->
+ 
+        <div id="history-section" class="">
+            <div id="history-container" class="space-y-3">
+                Hello
+
+            </div>
+        </div>
     </main>
     <!-- Footer section -->
     <footer class="footer  bg-base-300 text-base-content p-6">
