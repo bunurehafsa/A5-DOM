@@ -52,7 +52,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function (e
     document.getElementById('current-balance').innerText=newCurrentBalance;
 
     const p = document.createElement('p');
-    p.innerText = ` ${donateForNoakhali} Tk. is donated for Flood at Noakhali, Bangladesh`;
+    p.innerText = ` ${donateForNoakhali} Tk. is donated for Flood Relief in Feni, Bangladesh`;
 
     document.getElementById('history-container').appendChild(p);
 
@@ -79,7 +79,7 @@ document.getElementById('btn-donate-quota-movement').addEventListener('click', f
     document.getElementById('current-balance').innerText=newCurrentBalance;
 
     const p = document.createElement('p');
-    p.innerText = ` ${donateForNoakhali} Tk. is donated for Flood at Noakhali, Bangladesh`;
+    p.innerText = ` ${donateForNoakhali} Tk. is donated for Injured in the Quota Movement, Bangladesh`;
 
     document.getElementById('history-container').appendChild(p);
 
